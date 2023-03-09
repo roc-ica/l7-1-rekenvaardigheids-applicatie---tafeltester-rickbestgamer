@@ -1,0 +1,35 @@
+﻿<Page x:Class="Tafeltester.Pages.Difficulty_picker"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tafeltester.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Difficulty_picker">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="3" Grid.Column="2" Content="Easy" VerticalAlignment="center" Margin="10" Click="Dif_easy"></Button>
+        <Button Grid.Row="3" Grid.Column="3" Content="Normal" VerticalAlignment="center" Margin="10" Click="Dif_medium"></Button>
+        <Button Grid.Row="3" Grid.Column="4" Content="Hard" VerticalAlignment="center" Margin="10" Click="Dif_hard"></Button>
+    </Grid>
+</Page>
