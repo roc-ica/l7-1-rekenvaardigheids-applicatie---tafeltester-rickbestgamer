@@ -44,10 +44,13 @@ namespace Tafeltester.Pages
                     }
                 }
             }
+
+            TxbNameInput.Text = Globals.USER_NAME;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Globals.USER_NAME = TxbNameInput.Text;
             foreach (Window window in Application.Current.Windows)
             {
                 if (window.GetType() == typeof(MainWindow))
@@ -58,5 +61,12 @@ namespace Tafeltester.Pages
 
         }
 
+        private void TXBNameInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Button_Click(sender, e);
+            }
+        }
     }
 }

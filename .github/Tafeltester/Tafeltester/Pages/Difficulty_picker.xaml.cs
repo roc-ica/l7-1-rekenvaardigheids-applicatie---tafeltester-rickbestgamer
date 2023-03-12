@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -31,6 +32,7 @@ namespace Tafeltester.Pages
                     (window as MainWindow).MainFrame.Content = null;
                 }
             }
+            USER_NAME.Text = Globals.USER_NAME;
         }
 
         void NavigationService_Navigated(object sender, NavigationEventArgs e)
@@ -78,6 +80,18 @@ namespace Tafeltester.Pages
                 if (window.GetType() == typeof(MainWindow))
                 {
                     (window as MainWindow).MainFrame.Content = new Questions();
+                }
+            }
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            Globals.DIFFICULTY_SELECTOR = 2;
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window.GetType() == typeof(MainWindow))
+                {
+                    (window as MainWindow).MainFrame.Content = new Landing();
                 }
             }
         }

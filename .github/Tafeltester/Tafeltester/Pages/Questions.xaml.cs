@@ -76,5 +76,10 @@ namespace Tafeltester.Pages
                 }
             }
         }
+
+        private void NextQuestion(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

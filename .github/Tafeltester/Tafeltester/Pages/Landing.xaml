@@ -28,7 +28,7 @@
             <RowDefinition Height="43*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Text="Type here your name" TextAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap"/>
-        <TextBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" TextWrapping="Wrap" Margin="10"/>
+        <TextBox Name="TxbNameInput" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" TextWrapping="Wrap" Margin="10" KeyDown="TXBNameInput_KeyDown"/>
         <Button Grid.Row="4" Grid.Column="3" Content="Submit" VerticalAlignment="Top" Click="Button_Click"></Button>
     </Grid>
 </Page>
