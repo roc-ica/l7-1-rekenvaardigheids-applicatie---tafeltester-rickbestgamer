@@ -20,6 +20,7 @@ namespace Tafeltester
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -31,27 +32,19 @@ namespace Tafeltester
                     (window as MainWindow).MainFrame.Content = new Pages.Landing();
                 }
             }
-        }
 
-        void NavigationService_Navigated(object sender, NavigationEventArgs e)
-        {
-            foreach (Window window in Application.Current.Windows)
+            void NavigationService_Navigated(object sender, NavigationEventArgs e)
             {
-                if (window.GetType() == typeof(MainWindow))
+                foreach (Window window in Application.Current.Windows)
                 {
-                    (window as MainWindow).MainFrame.NavigationService.RemoveBackEntry();
-                    (window as MainWindow).MainFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
-                    (window as MainWindow).MainFrame.NavigationService.Navigated -= NavigationService_Navigated;
+                    if (window.GetType() == typeof(MainWindow))
+                    {
+                        (window as MainWindow).MainFrame.NavigationService.RemoveBackEntry();
+                        (window as MainWindow).MainFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
+                        (window as MainWindow).MainFrame.NavigationService.Navigated -= NavigationService_Navigated;
+                    }
                 }
             }
-        }
-
-        private void BtnClickP1(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void BtnClickP2(object sender, RoutedEventArgs e)
-        {
         }
     }
 }

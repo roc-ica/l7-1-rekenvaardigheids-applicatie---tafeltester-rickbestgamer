@@ -32,21 +32,22 @@ namespace Tafeltester.Pages
                     (window as MainWindow).MainFrame.Content = null;
                 }
             }
+            
+            void NavigationService_Navigated(object sender, NavigationEventArgs e)
+            {
+                foreach (Window window in Application.Current.Windows)
+                {
+                    if (window.GetType() == typeof(MainWindow))
+                    {
+                        (window as MainWindow).MainFrame.NavigationService.RemoveBackEntry();
+                        (window as MainWindow).MainFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
+                        (window as MainWindow).MainFrame.NavigationService.Navigated -= NavigationService_Navigated;
+                    }
+                }
+            }
             USER_NAME.Text = Globals.USER_NAME;
         }
 
-        void NavigationService_Navigated(object sender, NavigationEventArgs e)
-        {
-            foreach (Window window in Application.Current.Windows)
-            {
-                if (window.GetType() == typeof(MainWindow))
-                {
-                    (window as MainWindow).MainFrame.NavigationService.RemoveBackEntry();
-                    (window as MainWindow).MainFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
-                    (window as MainWindow).MainFrame.NavigationService.Navigated -= NavigationService_Navigated;
-                }
-            }
-        }
 
         private void Dif_easy(object sender, RoutedEventArgs e)
         {
@@ -86,7 +87,6 @@ namespace Tafeltester.Pages
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
         {
-            Globals.DIFFICULTY_SELECTOR = 2;
             foreach (Window window in Application.Current.Windows)
             {
                 if (window.GetType() == typeof(MainWindow))

@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Result">
 
-    <Grid Background="White">
+    <Grid x:Name="GrdResult" Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
             <ColumnDefinition Width="43*"/>
@@ -27,6 +27,9 @@
             <RowDefinition Height="43*"/>
             <RowDefinition Height="43*"/>
         </Grid.RowDefinitions>
-        
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Top" TextAlignment="Center" Text="Questions"></TextBlock>
+        <TextBlock Grid.Column="4" Grid.ColumnSpan="2" VerticalAlignment="Top" TextAlignment="Center" Text="Answers"></TextBlock>
+        <Button Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="5" VerticalAlignment="top" Content="Reset current difficulty" Click="ResetCurrentDifficulty"></Button>
+        <Button Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="5" VerticalAlignment="Bottom" Content="Select difficulty" Click="DifficultyPicker"></Button>
     </Grid>
 </Page>
