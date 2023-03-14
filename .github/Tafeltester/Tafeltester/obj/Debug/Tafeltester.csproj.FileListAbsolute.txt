@@ -22,3 +22,4 @@ C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-ri
 C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Tafeltester\Tafeltester\obj\Debug\Pages\Result.g.cs
 C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Tafeltester\Tafeltester\obj\Debug\Pages\Questions.baml
 C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Tafeltester\Tafeltester\obj\Debug\Pages\Result.baml
+C:\school\Level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Tafeltester\Tafeltester\obj\Debug\Tafeltester_Content.g.cs

@@ -51,12 +51,13 @@ namespace Tafeltester.Pages
             item2 = 0,
             item3 = 0,
             op = 0,
+            Answer = 0,
             row = 1,
             VAlignment = 1;
 
         TextBlock
-            Question = new TextBlock(),
-            Answer = new TextBlock();
+            TxblQuestion = new TextBlock(),
+            TxblAnswer = new TextBlock();
 
 
         private void GetItems()
@@ -65,10 +66,11 @@ namespace Tafeltester.Pages
             item2 = 0;
             item3 = 0;
             op = 0;
+            Answer = 0;
             row = 1;
             VAlignment = 1;
-            Question = new TextBlock();
-            Answer = new TextBlock();
+            TxblQuestion = new TextBlock();
+            TxblAnswer = new TextBlock();
 
             if (Globals.DIFFICULTY_SELECTOR == 0)
             {
@@ -101,79 +103,92 @@ namespace Tafeltester.Pages
 
         private void DisplayItems(ArrayList Arlist)
         {
-            Question = new TextBlock();
-            Answer = new TextBlock();
+            TxblQuestion = new TextBlock();
+            TxblAnswer = new TextBlock();
             foreach (var key in Arlist)
             {
-                int Position = Arlist.IndexOf(key);
+                int Position = Arlist.IndexOf(key),
+                    ListLength = Arlist.Count;
                 if (Position == 0)
                 {
                     item1 = (int)key;
                 }
-                else if (Position % 3 == 1)
+                else if (Position % ListLength == 1)
                 {
                     item2 = (int)key;
 
                 }
-                else if (Position % 3 == 2)
+                else if (Position % ListLength == 2)
                 {
                     item3 = (int)key;
 
                 }
-                else if (Position % 3 == 0)
+                else if (Position % ListLength == 3)
                 {
                     op = (int)key;
+                }
+                else if (Position % ListLength == 4)
+                {
+                    Answer = Convert.ToInt32(key);
                 }
             }
 
             if (op == 0)
             {
-                Question.Text = item1 + " + " + item2;
+                TxblQuestion.Text = item1 + " + " + item2;
             }
             else if (op == 1)
             {
-                Question.Text = item1 + " - " + item2;
+                TxblQuestion.Text = item1 + " - " + item2;
             }
             else if (op == 2)
             {
-                Question.Text = item1 + " X " + item2;
+                TxblQuestion.Text = item1 + " X " + item2;
             }
             else if (op == 3)
             {
-                Question.Text = item1 + " : " + item2;
+                TxblQuestion.Text = item1 + " : " + item2;
             }
 
-            Answer.Text = Convert.ToString(item3);
+            TxblAnswer.Text = item3 + "    " + Answer;
+            if (Answer == item3)
+            {
+                TxblAnswer.Foreground = Brushes.Green;
+            }
+            else
+            {
+                TxblAnswer.Foreground = Brushes.Red;
+            }
 
-            Grid.SetColumn(Question, 2);
-            Grid.SetRow(Question, row);
-            Grid.SetColumn(Answer, 4);
-            Grid.SetColumnSpan(Answer, 2);
-            Grid.SetRow(Answer, row);
-            Question.TextAlignment = TextAlignment.Left;
-            Answer.TextAlignment = TextAlignment.Left;
+            Grid.SetColumn(TxblQuestion, 2);
+            Grid.SetRow(TxblQuestion, row);
+            Grid.SetColumn(TxblAnswer, 4);
+            Grid.SetColumnSpan(TxblAnswer, 2);
+            Grid.SetRow(TxblAnswer, row);
+            TxblQuestion.TextAlignment = TextAlignment.Left;
+            TxblAnswer.TextAlignment = TextAlignment.Left;
 
             if (VAlignment == 1)
             {
-                Question.VerticalAlignment = VerticalAlignment.Top;
-                Answer.VerticalAlignment = VerticalAlignment.Top;
+                TxblQuestion.VerticalAlignment = VerticalAlignment.Top;
+                TxblAnswer.VerticalAlignment = VerticalAlignment.Top;
                 VAlignment++;
             }
             else if (VAlignment == 2)
             {
-                Question.VerticalAlignment = VerticalAlignment.Center;
-                Answer.VerticalAlignment = VerticalAlignment.Center;
+                TxblQuestion.VerticalAlignment = VerticalAlignment.Center;
+                TxblAnswer.VerticalAlignment = VerticalAlignment.Center;
                 VAlignment++;
             }
             else if (VAlignment == 3)
             {
-                Question.VerticalAlignment = VerticalAlignment.Bottom;
-                Answer.VerticalAlignment = VerticalAlignment.Bottom;
+                TxblQuestion.VerticalAlignment = VerticalAlignment.Bottom;
+                TxblAnswer.VerticalAlignment = VerticalAlignment.Bottom;
                 row++;
                 VAlignment = 1;
             }
-            GrdResult.Children.Add(Question);
-            GrdResult.Children.Add(Answer);
+            GrdResult.Children.Add(TxblQuestion);
+            GrdResult.Children.Add(TxblAnswer);
         }
 
         private void ResetCurrentDifficulty(object sender, RoutedEventArgs e)

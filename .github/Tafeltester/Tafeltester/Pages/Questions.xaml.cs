@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,7 +14,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Tafeltester.Pages
 {
@@ -182,11 +183,36 @@ namespace Tafeltester.Pages
         {
             if (txb_questioin_input.Text == Convert.ToString(item3))
             {
+                SoundPlayer player = new SoundPlayer(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, @"Media\correct.wav"));
+                player.Play();
                 ArrayList tmplist = new ArrayList();
                 tmplist.Add(item1);
                 tmplist.Add(item2);
                 tmplist.Add(item3);
                 tmplist.Add(op);
+                tmplist.Add(txb_questioin_input.Text);
+                list.Add(tmplist);
+
+                txb_questioin_input.Text = "";
+                if (list.Count < 10)
+                {
+                    Generate_Calculation();
+                }
+                else
+                {
+                    CheckQuestions(sender, e);
+                }
+            }
+            else
+            {
+                SoundPlayer player = new SoundPlayer(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, @"Media\wrong.wav"));
+                player.Play();
+                ArrayList tmplist = new ArrayList();
+                tmplist.Add(item1);
+                tmplist.Add(item2);
+                tmplist.Add(item3);
+                tmplist.Add(op);
+                tmplist.Add(txb_questioin_input.Text);
                 list.Add(tmplist);
 
                 txb_questioin_input.Text = "";
