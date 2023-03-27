@@ -27,12 +27,10 @@ namespace Tafeltester.Pages
         ArrayList list;
         int item1,
             item2,
-            item3, 
+            item3,
             op,
             QuestionsLenght = 10,
             QuestionsCurrent;
-
-
 
         public Questions()
         {
@@ -47,7 +45,7 @@ namespace Tafeltester.Pages
                 }
             }
             difficulty_header.Text = Convert.ToString((Globals.DIFFICULTY)Globals.DIFFICULTY_SELECTOR);
-            
+
             void NavigationService_Navigated(object sender, NavigationEventArgs e)
             {
                 foreach (Window window in Application.Current.Windows)
@@ -63,7 +61,6 @@ namespace Tafeltester.Pages
         }
 
         readonly int difficulty_selector = Convert.ToInt16(Globals.DIFFICULTY_SELECTOR);
-
 
         private void Generate_Calculation()
         {

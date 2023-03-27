@@ -1,0 +1,16 @@
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\bin\Debug\Rick dorrs quest.exe.config
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\bin\Debug\Rick dorrs quest.exe
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\bin\Debug\Rick dorrs quest.pdb
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest.csproj.AssemblyReference.cache
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest.csproj.SuggestedBindingRedirects.cache
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\MainWindow.g.cs
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\App.g.cs
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest_MarkupCompile.cache
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest_MarkupCompile.lref
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\MainWindow.baml
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest.g.resources
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick_dorrs_quest.Properties.Resources.resources
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest.csproj.GenerateResource.cache
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest.csproj.CoreCompileInputs.cache
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest.exe
+C:\school\level 7\Tafeltester\l7-1-rekenvaardigheids-applicatie---tafeltester-rickbestgamer\.github\Rick dorrs quest\Rick dorrs quest\obj\Debug\Rick dorrs quest.pdb
