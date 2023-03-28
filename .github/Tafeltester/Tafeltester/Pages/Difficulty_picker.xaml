@@ -9,7 +9,13 @@
       Title="Difficulty_picker">
 
 
-    <Grid Background="White">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF75E68B" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
             <ColumnDefinition Width="43*"/>
@@ -30,10 +36,10 @@
         </Grid.RowDefinitions>
 
         <TextBlock Name="USER_NAME" Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom" TextAlignment="Center" Margin="10" TextWrapping="Wrap"></TextBlock>
-        <Button x:Name="BtnEdit" Grid.Column="3" Grid.Row="2" Margin="10, 0" VerticalAlignment="Top" Content="Edit name" Click="BtnEdit_Click" Background="#FF41EDEA" BorderThickness="0"></Button>
-        <Button x:Name="BtnEasy" Grid.Row="3" Grid.Column="2" Content="Easy" VerticalAlignment="center" Margin="10" Click="Dif_easy" Background="#FF64DE2F" BorderThickness="0"></Button>
-        <Button x:Name="BtnNormal" Grid.Row="3" Grid.Column="3" Content="Normal" VerticalAlignment="center" Margin="10" Click="Dif_medium" Background="#FFD4CE2C" BorderThickness="0"></Button>
-        <Button x:Name="BtnHard" Grid.Row="3" Grid.Column="4" Content="Hard" VerticalAlignment="center" Margin="10" Click="Dif_hard" Background="#FFDC1818" BorderThickness="0"></Button>
+        <Button x:Name="BtnEdit" Grid.Column="3" Grid.Row="1" Margin="10" Content="Edit name" Click="BtnEdit_Click" Background="#FF41EDEA" BorderThickness="0" FontSize="16"/>
+        <Button x:Name="BtnEasy" Grid.Row="3" Grid.Column="2" Content="Easy" Margin="10" Click="Dif_easy" Background="#FF64DE2F" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" VerticalAlignment="Stretch"/>
+        <Button x:Name="BtnNormal" Grid.Row="3" Grid.Column="3" Content="Normal" Margin="10" Click="Dif_medium" Background="#FFD4CE2C" BorderThickness="0" FontSize="16" VerticalAlignment="Stretch"/>
+        <Button x:Name="BtnHard" Grid.Row="3" Grid.Column="4" Content="Hard" Margin="10" Click="Dif_hard" Background="#FFDC1818" BorderThickness="0" FontSize="16" VerticalAlignment="Stretch"/>
 
     </Grid>
 </Page>
