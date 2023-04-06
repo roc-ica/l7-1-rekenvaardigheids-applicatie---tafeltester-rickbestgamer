@@ -37,7 +37,7 @@
         <TextBlock x:Name="difficulty_header" Grid.Column="3" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"></TextBlock>
         <TextBlock x:Name="TxBlProgress" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="1" VerticalAlignment="Bottom" TextAlignment="Center"></TextBlock>
         <TextBlock x:Name="txbl_question" Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="2" TextAlignment="Center" VerticalAlignment="Bottom" Margin="5" TextWrapping="Wrap"></TextBlock>
-        <TextBox x:Name="txb_questioin_input" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" KeyDown="TXBNameInput_KeyDown"></TextBox>
+        <TextBox x:Name="txb_questioin_input" Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="3" KeyDown="TXBNameInput_KeyDown" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
         <Button Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" Content="Check" Margin="0,0,0,0" Click="CheckQuestions"/>
         <Button Grid.Column="3" Grid.Row="4" VerticalAlignment="Center" Content="Next" Margin="0,0,0,0" Click="NextQuestion"/>
         <Button Grid.Column="4" Grid.Row="4" VerticalAlignment="Center" Content="Back" Margin="0,0,0,0" Click="Back"/>

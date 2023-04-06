@@ -46,7 +46,7 @@ namespace Tafeltester.Pages
             }
             GetItems();
         }
-        int 
+        int
             item1 = 0,
             item2 = 0,
             item3 = 0,
@@ -127,9 +127,9 @@ namespace Tafeltester.Pages
                 {
                     op = (int)key;
                 }
-                else if (Position % ListLength == 4)
+                else if (Position % ListLength == 4 && (string)key != "")
                 {
-                    Answer = Convert.ToInt32(key);
+                    Answer = (int)key;
                 }
             }
 
