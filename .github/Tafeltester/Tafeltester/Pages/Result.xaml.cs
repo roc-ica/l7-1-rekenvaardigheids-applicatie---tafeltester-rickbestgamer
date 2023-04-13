@@ -129,7 +129,7 @@ namespace Tafeltester.Pages
                 }
                 else if (Position % ListLength == 4 && (string)key != "")
                 {
-                    Answer = (int)key;
+                    Answer = Convert.ToInt32(key);
                 }
             }
 
