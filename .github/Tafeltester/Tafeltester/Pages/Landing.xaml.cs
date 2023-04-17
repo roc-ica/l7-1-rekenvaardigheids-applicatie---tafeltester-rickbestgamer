@@ -47,8 +47,8 @@ namespace Tafeltester.Pages
                     }
                 }
             }
-
             TxbNameInput.Text = Globals.USER_NAME;
+            TxbNameInput.Focus();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

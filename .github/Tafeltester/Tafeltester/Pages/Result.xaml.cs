@@ -166,7 +166,7 @@ namespace Tafeltester.Pages
             Grid.SetColumnSpan(TxblAnswer, 2);
             Grid.SetRow(TxblAnswer, row);
             TxblQuestion.TextAlignment = TextAlignment.Left;
-            TxblAnswer.TextAlignment = TextAlignment.Left;
+            TxblAnswer.TextAlignment = TextAlignment.Center;
 
             if (VAlignment == 1)
             {

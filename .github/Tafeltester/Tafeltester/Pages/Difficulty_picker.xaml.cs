@@ -45,7 +45,7 @@ namespace Tafeltester.Pages
                     }
                 }
             }
-            USER_NAME.Text = Globals.USER_NAME;
+            USER_NAME.Text = "Hello " + Globals.USER_NAME;
         }
 
 

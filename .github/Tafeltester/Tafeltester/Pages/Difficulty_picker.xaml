@@ -35,7 +35,7 @@
             <RowDefinition Height="43*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Name="USER_NAME" Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom" TextAlignment="Center" Margin="10" TextWrapping="Wrap"></TextBlock>
+        <TextBlock Name="USER_NAME" Grid.Column="3" Grid.Row="2" VerticalAlignment="Center" TextAlignment="Center" Margin="10" TextWrapping="Wrap"></TextBlock>
         <Button x:Name="BtnEdit" Grid.Column="3" Grid.Row="1" Margin="10" Content="Edit name" Click="BtnEdit_Click" Background="#FF41EDEA" BorderThickness="0" FontSize="16"/>
         <Button x:Name="BtnEasy" Grid.Row="3" Grid.Column="2" Content="Easy" Margin="10" Click="Dif_easy" Background="#FF64DE2F" BorderThickness="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" VerticalAlignment="Stretch"/>
         <Button x:Name="BtnNormal" Grid.Row="3" Grid.Column="3" Content="Normal" Margin="10" Click="Dif_medium" Background="#FFD4CE2C" BorderThickness="0" FontSize="16" VerticalAlignment="Stretch"/>
